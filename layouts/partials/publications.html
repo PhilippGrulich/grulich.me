@@ -1,30 +1,62 @@
 
                             <section class="publications-section py-3">
 
-                                <h3 class="text-uppercase resume-section-heading mb-4">{{ i18n "publications" }}</h3>
+                                <h3 class="text-uppercase resume-section-heading mb-4">Selected Publications</h3>
 
-                                {{ range .Site.Params.publications.list }}
-                                <div class="item mb-3">
-                                    <div class="item-heading row align-items-center mb-2">
-                                        <h4 class="item-title col-12 col-md-7 col-lg-10 mb-2 mb-md-0">{{ .title }}
-                                            <br>
-                                            <span class="badge badge-secondary resume-publication-item"><a class="label label-default" href="{{ .Site.BaseURL }}/{{ .link }}"><i class="fa-solid fa-file-pdf"></i> Paper</a></span> 
+                                <p class="mb-4">   Selected publications. For more information, view my <a href="{{ .Site.BaseURL }}publication/"> publication page.</a></p>
+                                {{ range .Site.Params.publications.years }}
+                                {{ range .list }}
+                                {{ if .selected }}
+                                <div class="item mb-3 publication">
+                                    <div class="item-heading row mb-0">
+                                        <div class="item-content col-11 col-md-11 col-lg-11 mb-1 mb-md-0">
+                                            <h4 class="item-title">{{ .title }}     
+                                            </h4>
+                                            <p class=""><strong class="venue">{{.venue}} </strong><strong> | {{ .authors }}</strong></p>
+                                        </div>
+                                        <div class="item-meta col-1 col-md-1 col-lg-1 text-muted text-left text-md-right">
+                                            <span class="badge resume-publication-item">
+                                                <a class="label label-default" href="{{ .Site.BaseURL }}/{{ .link }}"><i class="fa-regular fa-file-pdf"></i></a>
+                                            
+                                            </span> 
+                                           
+                                        </div>
+                                    </div>
+                                   
+                                    {{ if .abstract }}
+                                    <div class="item-content row hide mb-3">
+                                        <div class="item-meta col-12 col-md-12 col-lg-12 text-muted text-left text-md-left">
+                                            <span class="badge resume-sub-publication-item"><a class="label label-default" target="_blank" href="{{ .Site.BaseURL }}/{{ .link }}"><i class="fa-regular fa-file-pdf"></i> Paper</a></span> 
+                                            {{ if .code }}
+                                            <span class="badge resume-sub-publication-item"><a class="label label-default" target="_blank" href={{ .code }}><i class="fa-brands fa-github"></i> Code</a></span>
+                                            {{ end }}
                                             {{ if .slides }}
-                                            <span class="badge badge-secondary resume-publication-item"><a class="label label-default" href={{ .slides }}><i class="fa-solid fa-file-pdf"></i> Slides</a></span>
+                                            <span class="badge resume-sub-publication-item" ><a class="label label-default" target="_blank" href={{ .slides }}><i class="fa-regular fa-file-powerpoint"></i> Slides</a></span>
                                             {{ end }}
                                             {{ if .video }}
-                                            <span class="badge badge-secondary resume-publication-item"><a class="label label-default" href={{ .video }}><i class="fa-solid fa-file-pdf"></i> Video</a></span>
+                                            <span class="badge resume-sub-publication-item" ><a class="label label-default" target="_blank" href={{ .video }}><i class="fa-brands fa-youtube"></i> Video</a></span>
                                             {{ end }}
-                                            {{ if .poster }}
-                                            <span class="badge badge-secondary resume-publication-item"><a class="label label-default" href={{ .poster }}><i class="fa-solid fa-file-pdf"></i> Poster</a></span>
-                                            {{ end }}
-                                        </h4>
-                                        <div class="item-meta col-12 col-md-5 col-lg-2 text-muted text-left text-md-right"><span class="label label-success">{{ .venue }}</span></div>
+                                        </div>  
+                                                                                   
+                        
+                                        <p class="col-12 col-md-12 col-lg-12 mb-12 mb-md-0" style="text-align: justify;"><strong>Abstract: </strong>{{.abstract}}
+                                          
+                                        </p>
+                                        <br/>
+                                        <a href="{{.venue_link}}" class="col-12 col-md-12 col-lg-12 mb-12 mb-md-0 venue" style="text-align: justify;">                                                    
+                                            {{.fullvenue}}
+                                        </a>
+                                       
                                     </div>
-                                    <div class="item-content">
-                                        <p><strong>{{ .authors }}</strong> <br> {{ .fullvenue }}</p>
-                                    </div>
-                                </div><!--//item-->
+                                    {{ end }}
+                            </div>
+                        
+                            <!-- //item-->
                                 {{ end }}
+                                {{ end }}
+                                {{ end }}
+                                <a href="{{ .Site.BaseURL }}publication/">
 
+                                    View all Publications
+                                </a>
                             </section><!--//project-section-->

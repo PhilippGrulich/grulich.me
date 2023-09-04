@@ -1,19 +1,28 @@
 # Page settings
 
-baseURL = "https://venturadelmonte.github.io/"
+baseURL = "http://localhost:1313/"
 languageCode = "en"
-title = "Bonaventura Del Monte, Ph.D."
+title = "Philipp M. Grulich"
 #theme = "hugo-devresume-theme"
 #googleAnalytics = "UA-XXXXXXX-Y"
 
 
+[[menu.main]]
+  name ="Home"
+  url = "/"
+  weight = 1
+[[menu.main]]
+  name = "pub"
+  url = "/pub"
+  weight = 2
+
 
 [params]
-    author = "Bonaventura Del Monte"
-    description = "Bonaventura Del Monte's personal website"
+    author = "Philipp M. Grulich"
+    description = "Philipp M. Grulich's personal website"
 
 
-    primaryColor = "#54B689"
+    primaryColor = "#b51919"
     textPrimaryColor = "#292929"
 
 
@@ -21,11 +30,10 @@ title = "Bonaventura Del Monte, Ph.D."
 
     [params.profile]
         enable = true
-        title = "Ph.D."
-        name = "Bonaventura"
-        surname = "Del Monte"
+        name = "Philipp M."
+        surname = "Grulich"
         tagline = ""
-        avatar = "mypic.png"
+        avatar = "philipp-grulich-small.webp"
 
 
 
@@ -35,7 +43,7 @@ title = "Bonaventura Del Monte, Ph.D."
 
     [params.contact]
         enable = true
-        location = "Zürich, Switzerland"
+        location = "Berlin, Germany"
 
         #[[params.contact.list]]
         #icon = "fas fa-phone-square"
@@ -44,11 +52,11 @@ title = "Bonaventura Del Monte, Ph.D."
         [[params.contact.list]]
         icon = "fas fa-envelope-square"
         url = "mailto:#"
-        text = "venturadelmonte [at] gmail [dot] com"
+        text = "grulich [at] tu-berlin [dot] de"
         [[params.contact.list]]
         icon = "fas fa-globe"
-        url = "https://venturadelmonte.github.io/"
-        text = "https://venturadelmonte.github.io/"
+        url = "https://grulich.me/"
+        text = "https://grulich.me/"
 
 
 
@@ -84,15 +92,15 @@ title = "Bonaventura Del Monte, Ph.D."
         [[params.education.list]]
         degree = "PhD in Computer Science"
         university = "Technische Universität Berlin"
-        dates = "2016 - 2022"
+        dates = "2019 - Now"
         [[params.education.list]]
         degree = "MSc in Computer Science"
-        university = "University of Salerno"
-        dates = "2013 - 2016"
+        university = "TU Berlin"
+        dates = "2016 - 2019"
         [[params.education.list]]
         degree = "BSc in Computer Science"
-        university = "University of Salerno"
-        dates = "2010 - 2013"
+        university = "HAW Hamburg"
+        dates = "2013 - 2016"
 
 
 
@@ -107,8 +115,22 @@ title = "Bonaventura Del Monte, Ph.D."
         [[params.awards.list]]
         name = "Software Campus"
         body = "Graduate of development program for future IT executives"
+        date = "2021"
+
+        [[params.awards.list]]
+        name = "Nvidia Research Donation"
+        body = "Donation of two Nvidia Bluefild for Research"
+        date = "2022"
+
+        [[params.awards.list]]
+        name = "Google Cloud Resarch Grant"
+        body = ""
+        date = "2021"
+
+        [[params.awards.list]]
+        name = "DFG Grant"
+        body = "SPP 2037 – Scalable Data Management for Future Hardware"
         date = "2020"
-        link = "https://softwarecampus.de/certificates/17842/"
        
 
 
@@ -122,14 +144,11 @@ title = "Bonaventura Del Monte, Ph.D."
         enable = true
 
         [[params.languages.list]]
-        name = "Italian"
+        name = "German"
         level = "Native"
         [[params.languages.list]]
         name = "English"
         level = "Professional"
-        [[params.languages.list]]
-        name = "German"
-        level = "Intermediate"
 
 
 
@@ -193,135 +212,201 @@ I developed my Master's thesis while participating to an Erasmus+ program.
     [params.publications]
 
         enable = true
-        [[params.publications.list]]
-            title = "Towards Unifying Query Interpretation and Compilation"
-            authors = "Philipp M. Grulich, Aljoscha Lepping, Dwi Prasetyo Adi Nugroho, Bonaventura Del Monte, Varun Pandey, Steffen Zeuch, Volker Markl"
-            venue = "CIDR'22"
-            link = "https://www.cidrdb.org/cidr2023/papers/p49-grulich.pdf"
-            slides = ""
-            fullvenue = "13th Annual Conference on Innovative Data Systems Research (CIDR 2023). January 8-11, 2023, Amsterdam, The Netherlands."
-        [[params.publications.list]]
-            title = "Hardware-conscious techniques for efficient and reliable stateful stream processing"
-            authors = "Bonaventura Del Monte"
-            venue = "Ph.D. Thesis"
-            link = "https://depositonce.tu-berlin.de/items/2cc894d9-aaa4-4401-9091-59002f83439a"
-            slides = "assets/pdfs/PhD_Talk.pdf"
-            fullvenue = "Technische Universität Berlin"
-        [[params.publications.list]]
-            title = "Rethinking Stateful Stream Processing with RDMA"
-            authors = "Bonaventura Del Monte, Steffen Zeuch, Tilmann Rabl, Volker Markl."
-            venue = "SIGMOD'22"
-            link = "https://dl.acm.org/doi/abs/10.1145/3514221.3517826"
-            slides = "assets/pdfs/SlashSigmod2022.pdf"
-            fullvenue = "2022 ACM SIGMOD International Conference on Management of Data, Philadelphia, USA, 2022."
-        [[params.publications.list]]
-            title = "NebulaStream: Complex Analytics Beyond the Cloud"
-            authors = "Steffen Zeuch, Eleni Tzirita Zacharatou, Shuhao Zhang, Xenofon Chatziliadis, Ankit Chaudhary, Bonaventura Del Monte, Dimitrios Giouroukis, Philipp M. Grulich, Ariane Ziehn, Volker Markl."
-            venue = "VLDB'20"
-            link = "https://www.nebula.stream/paper/zeuch_vliot.pdf"
-            slides = ""
-            fullvenue = "Very Large Databases Conference, Tokyo, Japan, 2020."
-        [[params.publications.list]]
-            title = "Rhino: Efficient Management of Very Large Distributed State for Stream Processing Engines"
-            authors = "Bonaventura Del Monte, Steffen Zeuch, Tilmann Rabl, Volker Markl."
-            venue = "SIGMOD'20"
-            link = "https://dl.acm.org/doi/10.1145/3318464.3389723"
-            slides = "https://www.slideshare.net/BonaventuraDelMonte/rhino-efficient-management-of-very-large-distributed-state-for-stream-processing-engines"
-            fullvenue = "2020 ACM SIGMOD International Conference on Management of Data, Portland, USA, 2020."
-        [[params.publications.list]]
-            title = "The NebulaStream Platform: Data and Application Management for the Internet of Things"
-            authors = "Steffen Zeuch, Ankit Chaudhary, Bonaventura Del Monte, Haralampos Gavriilidis, Dimitrios Giouroukis, Philipp M. Grulich, Sebastian Bress, Jonas Traub, Volker Markl."
-            venue = "CIDR'20"
-            link = "http://cidrdb.org/cidr2020/papers/p7-zeuch-cidr20.pdf"
-            slides = ""
-            fullvenue = "Biennial Conference on Innovative Data Systems, Amsterdam, Netherlands, 2020."
-        [[params.publications.list]]
-            title = "Analyzing efficient stream processing on modern hardware"
-            authors = "Steffen Zeuch, Bonaventura Del Monte, Jeyhun Karimov, Clemens Lutz, Manuel Renz, Jonas Traub, Sebastian Breß, Tilmann Rabl, and Volker Markl"
-            venue = "VLDB'19"
-            link = "http://www.vldb.org/pvldb/vol12/p516-zeuch.pdf"
-            slides = ""
-            fullvenue = "International Conference on Very Large Data Bases (VLDB-2019), Los Angeles, USA, 2019"
-        [[params.publications.list]]
-            title = "On-the-fly Reconfiguration of Query Plans for Stateful Stream Processing Engines"
-            authors = "Adrian Bartnik, Bonaventura Del Monte, Tilmann Rabl and Volker Markl"
-            venue = "BTW'19"
-            link = "http://www.redaktion.tu-berlin.de/fileadmin/fg131/Publikation/Papers/on-the-fly-reconfiguration_bartnik-2019.pdf"
-            slides = ""
-            fullvenue = "Tagungsband Datenbanksysteme für Business, Technologie und Web (BTW 2019), Rostock, Germany, 2019"
-        [[params.publications.list]]
-            title = "Efficient Migration of Very Large Distributed State for Scalable Stream Processing"
-            authors = "Bonaventura Del Monte"
-            venue = "VLDB'17"
-            link = "http://ceur-ws.org/Vol-1882/paper01.pdf"
-            slides = ""
-            fullvenue = "Proceedings of the VLDB 2017 PhD Workshop. International Conference on Very Large Data Bases (VLDB-2017), located at co-located with the 43rd International Conference on Very Large Databases (VLDB 2017), August 28, München, Germany, 2017"
-        [[params.publications.list]]
-            title = "PROTEUS: Scalable Online Machine Learning for Predictive Analytics and Real-Time Interactive Visualization"
-            authors = "Bonaventura Del Monte, Jeyhun Karimov, Alireza Rezaei Mahdiraji, Tilmann Rabl, Volker Markl"
-            venue = "EDBT'17"
-            link = "http://ceur-ws.org/Vol-1810/EuroPro_paper_03.pdf"
-            slides = ""
-            fullvenue = "International Workshop on Big Data Management in European Projects (EuroPro), 1st, located at Joint Conference EDBT/ICDT, March 21, Venice, Italy, 2017"
-        [[params.publications.list]]
-            title = "A scalable GPU-enabled framework for training deep neural networks"
-            authors = "Bonaventura Del Monte, Radu Prodan"
-            venue = "ICGHPC'16"
-            link = "http://ieeexplore.ieee.org/abstract/document/7508071/"
-            slides = ""
-            fullvenue = "2nd IEEE Int. Conf. on Green High Performance Computing (ICGHPC'16), Nagercoil, India, February 26-27, 2016"
+        [[params.publications.years]]
+            year = "2023"
+            [[params.publications.years.list]]
+                title = "Towards Unifying Query Interpretation and Compilation"
+                authors = "Philipp M. Grulich, Aljoscha Lepping, Dwi Prasetyo Adi Nugroho, Bonaventura Del Monte, Varun Pandey, Steffen Zeuch, Volker Markl"
+                venue = "CIDR'23"
+                selected = true
+                abstract = "Engineering high-performance query execution engines is a highly challenging task. Query compilation provides excellent performance but at the same time introduces a high system complexity, as it makes the engine hard to build, debug and maintain. In this paper, we discuss two fundamental challenges that hinder the adoption of query compilation."
+                link = "https://www.cidrdb.org/cidr2023/papers/p49-grulich.pdf"
+                slides = "test"
+                video = "https://www.youtube.com/watch?v=Ol8XW_Hy16o"
+                fullvenue = "13th Annual Conference on Innovative Data Systems Research (CIDR 2023). January 8-11, 2023, Amsterdam, The Netherlands." 
+            [[params.publications.years.list]]
+                    title = "Survey of window types for aggregation in stream processing systems"
+                    authors = "Juliane Verwiebe, Philipp M. Grulich, Jonas Traub, Volker Markl"
+                    venue = "VLDB Journal"
+                      selected = true
+                    link = "assets/pdfs/WindowSurveyVLDBJ2023.pdf"      
+                    abstract = "In this paper, we present the first comprehensive survey of window types for stream processing systems which have been presented in research and commercial systems. We cover publications from the most relevant conferences, journals, and system whitepapers on stream processing, windowing, and window aggregation which have been published over the last 20 years. For each window type, we provide detailed specifications, formal notations, synonyms, and use-case examples. We classify each window type according to categories that have been proposed in literature and describe the out-of-order processing. In addition, we examine academic, commercial, and open-source systems with respect to the window types that they support. Our survey offers a comprehensive overview that may serve as a guideline for the development of stream processing systems, window aggregation techniques, and frameworks that support a variety of window types."
+                    venue_link = "https://link.springer.com/article/10.1007/s00778-022-00778-6"
+                    fullvenue = "The International Journal on Very Large Data Bases, 2023"       
+        [[params.publications.years]]
+            year = "2022"
+            [[params.publications.years.list]]
+                title = "Babelfish: Efficient Execution of Polyglot Queries"
+                authors = "Philipp M. Grulich, Steffen Zeuch, Volker Markl"
+                venue = "VLDB'22"
+                  selected = true
+                link = "assets/pdfs/WindowAlgorithmsDS2022.pdf"
+                slides = ""
+                code = "https://github.com/TU-Berlin-DIMA/babelfish"
+                venue_link = "https://vldb.org/2022/"
+                fullvenue = "48th International Conference on Very Large DatabasesSydney, Australia - September 05-09, 2022."  
+                abstract = "Today's users of data processing systems come from different domains, have different levels of expertise, and prefer different programming languages. As a result, analytical workload requirements shifted from relational to polyglot queries involving user-defined functions (UDFs). Although some data processing systems support polyglot queries, they often embed third-party language runtimes. This embedding induces a high performance overhead, as it causes additional data materialization between execution engines. In this paper, we present Babelfish, a novel data processing engine designed for polyglot queries. Babelfish introduces an intermediate representation that unifies queries from different implementation languages. This enables new, holistic optimizations across operator and language boundaries, e.g., operator fusion and workload specialization. As a result, Babelfish avoids data transfers and enables efficient utilization of hardware resources. Our evaluation shows that Babelfish outperforms state-of-the-art data processing systems by up to one order of magnitude and reaches the performance of handwritten code. With Babelfish, we bridge the performance gap between relational and multi-language UDFs and lay the foundation for the efficient execution of future polyglot workloads."
+            [[params.publications.years.list]]
+                title = "Scotty: General and Efficient Open-source Window Aggregation for Stream Processing Systems."
+                authors = "	Jonas Traub, Philipp M. Grulich, Alejandro Rodriguez Cuellar, Sebastian Breß, Asterios Katsifodimos, Tilmann Rabl, Volker Markl"
+                venue = "TODS"
+                link = "assets/pdfs/WindowAlgorithmsDS2022.pdf"
+                slides = ""
+                code = "https://github.com/TU-Berlin-DIMA/scotty-window-processor"
+                abstract = "Window aggregation is a core operation in data stream processing. Existing aggregation techniques focus on reducing latency, eliminating redundant computations, or minimizing memory usage. However, each technique operates under different assumptions with respect to workload characteristics such as properties of aggregation functions (e.g., invertible, associative), window types (e.g., sliding, sessions), windowing measures (e.g., time- or count-based), and stream (dis)order. In this paper, we present Scotty, an efficient and general opensource operator for sliding-window aggregation in stream processing systems, such as Apache Flink, Apache Beam, Apache Samza, Apache Kafka, Apache Spark, and Apache Storm. One can easily extend Scotty with user-defined aggregation functions and window types. Scotty implements the concept of general stream slicing and derives workload characteristics from aggregation queries to improve performance without sacrificing its general applicability. We provide an in-depth view on the algorithms of the general stream slicing approach. Our experiments show that Scotty outperforms alternative solutions by up to one order of magnitude."
+                fullvenue = "ACM Transactions on Database Systems, Volume 46, Issue 1, Pages 1–46"  
+                venue_link = "https://dl.acm.org/doi/10.1145/3433675"
+        [[params.publications.years]]
+            year = "2021"          
+            [[params.publications.years.list]]
+                title = "An Energy-Efficient Stream Join for the Internet of Things."
+                authors = "Adrian Michalke, Philipp M. Grulich, Clemens Lutz, Steffen Zeuch, Volker Markl"
+                venue = "DaMoN 21"
+                    slides = ""
+                abstract = "The Internet of Things (IoT) combines large data centers with (mobile, networked) edge devices that are constrained both in compute power and energy budget. Modern edge devices contribute to query processing by leveraging accelerated processing units with multicore CPUs or GPUs. Therefore, data processing in the IoT presents the challenges of 1) minimizing the energy consumed while sustaining a given query throughput, and 2) processing increasingly complex queries within a given energy budget. In this paper, we investigate how modern edge devices can reduce the energy requirements of stream joins as a common data processing operation. We explore three dimensions to save energy: workload characteristics, computational efficiency, and heterogeneous hardware. Based on our findings, we propose the ecoJoin that 1) reduces energy consumption by 81% at a given join throughput, and 2) enables scaling the throughput by two orders-of-magnitude within a given energy budget."    
+                link = "assets/pdfs/WindowAlgorithmsDS2022.pdf"
+                 venue_link = "https://dl.acm.org/doi/abs/10.1145/3465998.3466005"
+                fullvenue = "Proceedings of the 17th International Workshop on Data Management on New Hardware, June 2021, Pages 1–6"  
+            [[params.publications.years.list]]
+                title = "Parallelizing Intra-Window Join on Multicores: An Experimental Study"
+                authors = "Shuhao Zhang, Yancan Mao, Jiong He, Philipp M. Grulich, Steffen Zeuch, Bingsheng He, Richard T. B. Ma, Volker Markl"
+                venue = "SIGMOD 21"
+                
+                slides = ""
+                abstract = "The intra-window join (IaWJ), i.e., joining two input streams over a single window, is a core operation in modern stream processing applications. This paper presents the first comprehensive study on parallelizing the IaWJ on modern multicore architectures. In particular, we classify IaWJ algorithms into lazy and eager execution approaches. For each approach, there are further design aspects to consider, including different join methods and partitioning schemes, leading to a large design space. Our results show that none of the algorithms always performs the best, and the choice of the most performant algorithm depends on: (i) workload characteristics, (ii) application requirements, and (iii) hardware architectures. Based on the evaluation results, we propose a decision tree that can guide the selection of an appropriate algorithm."
+                link = "assets/pdfs/WindowAlgorithmsDS2022.pdf"
+                fullvenue = "Proceedings of the 2021 International Conference on Management of Data, China June 20 - 25, 2021"
+            [[params.publications.years.list]]
+                title = "ExDRa: Exploratory Data Science on Federated Raw Data."
+                authors = "Sebastian Baunsgaard, Matthias Boehm, Ankit Chaudhary, Behrouz Derakhshan, Stefan Geißelsöder, Philipp M. Grulich, Michael Hildebrand, Kevin Innerebner, Volker Markl, Claus Neubauer, Sarah Osterburg, Olga Ovcharenko, Sergey Redyuk, Tobias Rieger, Alireza Rezaei Mahdiraji, Sebastian Benjamin Wrede, Steffen Zeuch"
+                venue = "SIGMOD 21"
+        
+                slides = ""
+                abstract = "Data science workflows are largely exploratory, dealing with under-specified objectives, open-ended problems, and unknown business value. Therefore, little investment is made in systematic acquisition, integration, and pre-processing of data. This lack of infrastructure results in redundant manual effort and computation. Furthermore, central data consolidation is not always technically or economically desirable or even feasible (e.g., due to privacy, and/or data ownership). The ExDRa system aims to provide system infrastructure for this exploratory data science process on federated and heterogeneous, raw data sources. Technical focus areas include (1) ad-hoc and federated data integration on raw data, (2) data organization and reuse of intermediates, and (3) optimization of the data science lifecycle, under awareness of partially accessible data. In this paper, we describe use cases, the overall system architecture, selected features of SystemDS' new federated backend (for federated linear algebra programs, federated parameter servers, and federated data preparation), as well as promising initial results. Beyond existing work on federated learning, ExDRa focuses on enterprise federated ML and related data pre-processing challenges. In this context, federated ML has the potential to create a more fine-grained spectrum of data ownership and thus, even new markets."
+                link = "assets/pdfs/WindowAlgorithmsDS2022.pdf"
+                venue_link ="https://dl.acm.org/doi/abs/10.1145/3448016.3457549"
+                fullvenue = "Proceedings of the 2021 International Conference on Management of Data, China June 20 - 25, 2021"
+          
+        [[params.publications.years]]
+            year = "2020"         
+            [[params.publications.years.list]]
+                title = "Grizzly: Efficient Stream Processing Through Adaptive Query Compilation"
+                authors = "Philipp M. Grulich, Sebastian Breß, Steffen Zeuch, Jonas Traub, Janis von Bleichert, Zongxiong Chen, Tilmann Rabl, Volker Markl"
+                venue = "SIGMOD'20"
+                  selected = true
+                code = "https://github.com/TU-Berlin-DIMA/grizzly-prototype"
+                link = "https://www.nebula.stream/paper/zeuch_vliot.pdf"
+                slides = ""
+                abstract = "Stream Processing Engines (SPEs) execute long-running queries on unbounded data streams. They follow an interpretation-based processing model and do not perform runtime optimizations. This limits the utilization of modern hardware and neglects changing data characteristics at runtime. In this paper, we present Grizzly, a novel adaptive query compilation-based SPE, to enable highly efficient query execution. We extend query compilation and task-based parallelization for the unique requirements of stream processing and apply adaptive compilation to enable runtime re-optimizations. The combination of light-weight statistic gathering with just-in-time compilation enables Grizzly to adjust to changing data-characteristics dynamically at runtime. Our experiments show that Grizzly outperforms state-of-the-art SPEs by up to an order of magnitude in throughput."
+                fullvenue = "Proceedings of the 2020 International Conference on Management of Data, Portland, USA, June 14 - 19, 2020"
+            [[params.publications.years.list]]
+                title = "Disco: Efficient Distributed Window Aggregation"
+                authors = "Philipp M. Grulich, Sebastian Breß, Steffen Zeuch, Jonas Traub, Janis von Bleichert, Zongxiong Chen, Tilmann Rabl, Volker Markl"
+                venue = "EDBT'20"
+                code = "https://github.com/hpides/disco"
+                video = "https://www.youtube.com/watch?v=Eeo5hZVfVuA"
+                link = "http://cidrdb.org/cidr2020/papers/p7-zeuch-cidr20.pdf"
+                abstract = "Many business applications benefit from fast analysis of online data streams. Modern stream processing engines (SPEs) provide complex window types and user-defined aggregation functions to analyze streams. While SPEs run in central data centers, wireless sensors networks (WSNs) perform distributed aggregations close to the data sources, which is beneficial especially in modern IoT setups. However, WSNs support only basic aggregations and windows. To bridge the gap between complex central aggregations and simple distributed analysis, we propose Disco, a distributed complex window aggregation approach. Disco processes complex window types on multiple independent nodes while efficiently aggregating incoming data streams. Our evaluation shows that Disco’s throughput scales linearly with the number of nodes and that Disco already outperforms a centralized solution in a two-node setup. Furthermore, Disco reduces the network cost significantly compared to the centralized approach. Disco’s tree-like topology handles thousands of nodes per level and scales to support future data-intensive streaming applications."
+                slides = ""
+                fullvenue = "25th International Conference on Extending Database Technology, Amsterdam, Netherlands, 2020."      
+    
+            [[params.publications.years.list]]
+                title = "The NebulaStream Platform: Data and Application Management for the Internet of Things"
+                authors = "Steffen Zeuch, Ankit Chaudhary, Bonaventura Del Monte, Haralampos Gavriilidis, Dimitrios Giouroukis, Philipp M. Grulich, Sebastian Bress, Jonas Traub, Volker Markl"
+                venue = "CIDR'20"
+                  selected = true
+                abstract = "The Internet of Things (IoT) presents a novel computing architecture for data management: a distributed, highly dynamic, and heterogeneous environment of massive scale. Applications for the IoT introduce new challenges for integrating the concepts of fog and cloud computing as well as sensor networks in one unified environment. In this paper, we highlight these major challenges and outline how existing systems handle them. To address these challenges, we introduce the NebulaStream platform, a general purpose, endto-end data management system for the IoT. NebulaStream addresses the heterogeneity and distribution of compute and data, supports diverse data and programming models going beyond relational algebra, deals with potentially unreliable communication, and enables constant evolution under continuous operation. In our evaluation, we demonstrate the effectiveness of our approach by providing early results on partial aspects."
+                link = "http://cidrdb.org/cidr2020/papers/p7-zeuch-cidr20.pdf"
+                slides = ""
+                venue_link= "https://www.cidrdb.org/cidr2020/"
+                fullvenue = "Conference on Innovative Data Systems, Amsterdam, Netherlands, 2020."      
+
+         [[params.publications.years]]
+            year = "2019"         
+            [[params.publications.years.list]]
+                title = "Generating Reproducible Out-of-Order Data Streams"
+                authors = "Philipp M. Grulich, Jonas Traub, Sebastian Breß, Asterios Katsifodimos, Volker Markl, Tilmann Rabl"
+                venue = " DEBS'19"
+                link = "https://www.nebula.stream/paper/zeuch_vliot.pdf"
+                slides = ""
+                abstract = "Evaluating modern stream processing systems in a reproducible manner requires data streams with different data distributions, data rates, and real-world characteristics such as delayed and out-of-order tuples. In this paper, we present an open source stream generator which generates reproducible and deterministic out-of-order streams based on real data files, simulating arbitrary fractions of out-of-order tuples and their respective delays."
+                venue_link= "https://dl.acm.org/doi/10.1145/3328905.3332511"
+                fullvenue = "ACM International Conference on Distributed and Event-based Systems, Darmstadt, Germany, June 24 - 28, 2019."       
+            [[params.publications.years.list]]
+                title = "Efficient Window Aggregation with General Stream Slicing"
+                authors = "Jonas Traub, Philipp M. Grulich, Alejandro Rodriguez Cuellar, Sebastian Breß, Asterios Katsifodimos, Tilmann Rabl, Volker Markl"
+                venue = " EDBT'19"
+                link = "https://www.nebula.stream/paper/zeuch_vliot.pdf"
+                slides = ""
+                code = "https://github.com/TU-Berlin-DIMA/scotty-window-processor"
+                abstract = "Window aggregation is a core operation in data stream processing. Existing aggregation techniques focus on reducing latency, eliminating redundant computations, and minimizing memory usage. However, each technique operates under different assumptions with respect to workload characteristics such as properties of aggregation functions (e.g., invertible, associative), window types (e.g., sliding, sessions), windowing measures (e.g., time- or countbased), and stream (dis)order. Violating the assumptions of a technique can deem it unusable or drastically reduce its performance. In this paper, we present the first general stream slicing technique for window aggregation. General stream slicing automatically adapts to workload characteristics to improve performance without sacrificing its general applicability. As a prerequisite, we identify workload characteristics which affect the performance and applicability of aggregation techniques. Our experiments show that general stream slicing outperforms alternative concepts by up to one order of magnitude."
+                vanue_link = "https://edbticdt2019.inesc-id.pt/"
+                fullvenue = " 22nd International Conference on Extending Database Technology, Lisbon, Portugal, March 26-29, 2019."     
+          [[params.publications.years]]
+            year = "2018"      
+            [[params.publications.years.list]]
+                title = "Collaborative Edge and Cloud Neural Networks for Real-Time Video Processing"
+                authors = "Philipp M. Grulich, Faisal Nawab"
+                venue = " VLDB'18"
+                  selected = true
+                link = "https://www.nebula.stream/paper/zeuch_vliot.pdf"
+                slides = ""
+                abstract = "The efficient processing of video streams is a key component in many emerging Internet of Things (IoT) and edge applications, such as Virtual and Augmented Reality (V/AR) and self-driving cars. These applications require real-time high-throughput video processing. This can be attained via a collaborative processing model between the edge and the cloud---called an Edge-Cloud model. To this end, many approaches were proposed to optimize the latency and bandwidth consumption of Edge-Cloud video processing, especially for Neural Networks (NN)-based methods. In this demonstration. We investigate the efficiency of these NN techniques, how they can be combined, and whether combining them leads to better performance. Our demonstration invites participants to experiment with the various NN techniques, combine them, and observe how the underlying NN changes with different techniques and how these changes affect accuracy, latency and bandwidth consumption."
+                vanue_link = "https://dl.acm.org/doi/10.14778/3229863.3236256"
+                fullvenue = "Very Large Databases Conference, Rio de Janeiro, Brazil, August 27-31st, 2018."     
+            [[params.publications.years.list]]
+                title = "Scalable Detection of Concept Drifts on Data Streams with Parallel Adaptive Windowing"
+                authors = "Philipp M. Grulich, René Saitenmacher, Jonas Traub, Sebastian Breß, Tilmann Rabl, Volker Markl"
+                venue = " EDBT'18"
+                link = "https://www.nebula.stream/paper/zeuch_vliot.pdf"
+                slides = ""
+                abstract = "Machine learning techniques for data stream analysis suffer from concept drifts such as changed user preferences, varying weather conditions, or economic changes. These concept drifts cause wrong predictions and lead to incorrect business decisions. Concept drift detection methods such as adaptive windowing (Adwin) allow for adapting to concept drifts on the fly. In this paper, we examine Adwin in detail and point out its throughput bottlenecks. We then introduce several parallelization alternatives to address these bottlenecks. Our optimizations lead to a speedup of two orders of magnitude over the original Adwin implementation. Thus, we explore parallel adaptive windowing to provide scalable concept detection for high-velocity data streams with millions of tuples per second."
+                fullvenue = "21st International Conference on Extending Database Technology, Vienna, Austria, 2018."    
+            [[params.publications.years.list]]
+                title = "Scotty: Efficient Window Aggregation for Out-of-Order Stream Processing."
+                authors = "Jonas Traub, Philipp Marian Grulich, Alejandro Rodriguez Cuellar, Sebastian Breß, Asterios Katsifodimos, Tilmann Rabl, Volker Markl"
+                venue = "ICDE'18"
+                code = "https://github.com/TU-Berlin-DIMA/scotty-window-processor"
+                abstract = "Computing aggregates over windows is at the core of virtually every stream processing job. Typical stream processing applications involve overlapping windows and, therefore, cause redundant computations. Several techniques prevent this redundancy by sharing partial aggregates among windows. However, these techniques do not support out-of-order processing and session windows. Out-of-order processing is a key requirement to deal with delayed tuples in case of source failures such as temporary sensor outages. Session windows are widely used to separate different periods of user activity from each other. In this paper, we present Scotty, a high throughput operator for window discretization and aggregation. Scotty splits streams into non-overlapping slices and computes partial aggregates per slice. These partial aggregates are shared among all concurrent queries with arbitrary combinations of tumbling, sliding, and session windows. Scotty introduces the first slicing technique which (1) enables stream slicing for session windows in addition to tumbling and sliding windows and (2) processes out-of-order tuples efficiently. Our technique is generally applicable to a broad group of dataflow systems which use a unified batch and stream processing model. Our experiments show that we achieve a throughput an order of magnitude higher than alternative stateof-the-art solutions."
+                link = "https://www.nebula.stream/paper/zeuch_vliot.pdf"
+                slides = ""
+                fullvenue = "34th International Conference on Data Engineering, Paris, France, April 16-19, 2018."  
+         [[params.publications.years]]
+            year = "2017"      
+            [[params.publications.years.list]]
+                title = "I2: Interactive Real-Time Visualization for Streaming Data."
+                authors = "Jonas Traub, Nikolaas Steenbergen, Philipp M. Grulich, Tilmann Rabl, Volker Markl"
+                venue = "EDBT'17"
+                code = "https://github.com/TU-Berlin-DIMA/i2"
+                link = "https://www.nebula.stream/paper/zeuch_vliot.pdf"
+                slides = ""
+                fullvenue = "20th International Conference on Extending Database Technology,  Venice, Italy, March 21-24, 2017"   
+                vanue_link =  "https://dblp.org/db/conf/edbt/edbt2017.html"
+                abstract = "Developing scalable real-time data analysis programs is a challenging task. Developers need insights from the data to define meaningful analysis flows, which often makes the development a trial and error process. Data visualization techniques can provide insights to aid the development, but the sheer amount of available data frequently makes it impossible to visualize all data points at the same time. We present I2, an interactive development environment that coordinates running cluster applications and corresponding visualizations such that only the currently depicted data points are processed and transferred. To this end, we present an algorithm for the real-time visualization of time series, which is proven to be correct and minimal in terms of transferred data. Moreover, we show how cluster programs can adapt to changed visualization properties at runtime to allow interactive data exploration on data streams."
+       
 
     [params.experience]
-        enable = false
+        enable = true
 
         [[params.experience.list]]
-        title = "Senior Software Engineer"
+        title = "Research Associate"
         dates = "2019 - Present"
-        company = "Google"
-        details = "Role description goes here ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Donec pede justo, fringilla vel. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis."
-        [[params.experience.list.items]]
-        details = "Lorem ipsum dolor sit amet, consectetuer."
-        [[params.experience.list.items]]
-        details = "Aenean commodo ligula eget dolor."
-        [[params.experience.list.items]]
-        details = "Etiam ultricies nisi vel augue."
+        company = "Technische Universität Berlin"
 
         [[params.experience.list]]
-        title = "Lead Software Developer"
+        title = "Research Assistant"
         dates = "2016 - 2019"
-        company = "Apple"
-        details = "Role description goes here ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Donec pede justo, fringilla vel."
-        [[params.experience.list.items]]
-        details = "Lorem ipsum dolor sit amet, consectetuer."
-        [[params.experience.list.items]]
-        details = "Aenean commodo ligula eget dolor."
-
+        company = "German Research Centre for Artificial Intelligence"
+       
         [[params.experience.list]]
-        title = "Senior Software Developer"
-        dates = "2014 - 2016"
-        company = "Dropbox"
-        details = "Role description goes here ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
-
+        title = "Software Developer"
+        dates = "2014 - 2015"
+        company = "Seamless Interaction"
+  
         [[params.experience.list]]
-        title = "Senior Developer"
-        dates = "2013 - 2014"
-        company = "Uber"
-        details = "Role description goes here ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus."
-
-        [[params.experience.list]]
-        title = "Backend Developer"
-        dates = "2014 - 2016"
-        company = "Amazon"
-        details = "Role description goes here ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
-
-        [[params.experience.list]]
-        title = "Frontend Developer"
-        dates = "2013 - 2014"
-        company = "Startup"
-        details = "Role description goes here ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus."
-
-
-
+        title = "Apprenticeship as a Computer Science Expert in Software Development"
+        dates = "2010 - 2013"
+        company = "Otto Group"
 
 
 
@@ -336,21 +421,9 @@ I developed my Master's thesis while participating to an Erasmus+ program.
         [[params.projects.list]]
         title = "NebulaStream"
         meta = "Open Source"
-        tagline = "I am actively involved as lead scientist in the development of [NebulaStream](https://www.nebula.stream/): a general purpose, end-to-end data management system for the IoT."
-
-        [[params.projects.list]]
-        title = "Rhino"
-        meta = "Open Source"
-        tagline = "I was a recipient of a [Software Campus](https://www.softwarecampus.de) award and the principal investigator of the [Rhino Project](https://www.dima.tu-berlin.de/menue/research/current_projects/rhino/) in collaboration with [Huawei Technologies LTD](https://www.huawei.com/)."
+        tagline = "I am actively involved as lead scientist and engineer in the development of [NebulaStream](https://www.nebula.stream/): a general purpose, end-to-end data management system for the IoT.      My work mainly focuses on the development of an efficent execution engine for high performance data processing on heterogeneous devices."
 
        
-
-
-
-
-
-
-
 
     [params.information]
         enable = false
@@ -378,16 +451,11 @@ I developed my Master's thesis while participating to an Erasmus+ program.
 
         [[params.social.list]]
         icon = "fab fa-github-square"
-        url = "//github.com/VenturaDelMonte"
-        title = "VenturaDelMonte"
+        url = "//github.com/PhilippGrulich"
+        title = ""
         [[params.social.list]]
         icon = "fab fa-linkedin"
-        url = "//linkedin.com/in/bonaventuradelmonte"
-        title = "bonaventuradelmonte"
-        [[params.social.list]]
-        icon = "fab fa-twitter-square"
-        url = "//twitter.com/VenturaDelMonte"
-        title = "@VenturaDelMonte"
+        url = "//linkedin.com/in/philippgrulich"
 
 
 

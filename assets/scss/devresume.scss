@@ -33,6 +33,10 @@ $theme-colors: (
   "secondary":  $theme-text-color-secondary,
 );
 
+.badge-secondary {
+	background-color: #c1c1c1;
+}
+
 /*************************** Import Bootstrap  *****************************/
 @import "bootstrap/scss/bootstrap.scss";
 // @import "../fontawesome/scss/fontawesome.scss";
@@ -41,6 +45,43 @@ $theme-colors: (
 /*************************** DevResume Styles ****************************/
 
 /*********** Theme Generic **********/
+
+.venue{
+	color: $theme-color-primary;
+}
+
+
+.publication .hide {
+}
+
+	  
+.publication:not(:hover) .hide {
+	font-size: 0;
+    margin: 0;
+    opacity: 0;
+    padding: 0;
+    /* fade out, then shrink */
+
+	height: 0;
+    transition: opacity .25s,
+                font-size .25s .25s,
+                margin .25s .25s,
+                padding .25s .25s;
+  }
+  .publication:hover .item-heading{
+
+	text-decoration-line: underline;
+    text-decoration-thickness: 1.5pt;
+  }
+.publication:hover  .hide {
+	/* unshrink, then fade in */
+    transition: font-size .25s,
+                margin .25s,
+                padding .25s,
+                opacity .25s .25s;
+  
+}
+
 body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -109,6 +150,18 @@ a.theme-link {
 	    top: 0;
    }
 }
+
+.resume-subsection-heading {
+	position: relative;
+	
+	font-size: 1.125rem;
+	letter-spacing: 0.15rem;
+	color: $theme-color-primary;
+	margin-bottom: -6pt!important;
+	margin-top: 20pt!important;
+}
+
+
 
 .resume-name {
 	font-size: 2.75rem;
@@ -187,7 +240,15 @@ a.resume-link {
 }
 
 .resume-publication-item {
-	font-size: 0.8rem;
+	//font-size: 0.9rem;
+	font-size: 1.5rem;
+    padding-top: 0px;
+}
+
+.resume-sub-publication-item {
+	font-size: 1rem;
+	//margin-top: 5px;
+	margin-bottom: 5px;
 }
 
 .fa-heart {
@@ -217,7 +278,7 @@ a.resume-link {
 
 @media (min-width: 1200px) {
     .container{
-        max-width: 1170px;
+        max-width: 1370px;
     }
 }
 

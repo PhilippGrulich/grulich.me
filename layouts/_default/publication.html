@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="{{ .Site.LanguageCode }}">
+
+<head>
+
+    {{ partial "head.html" . }}
+
+</head>
+
+<body>
+
+    <div class="main-wrapper">
+
+        <div class="container px-1 px-lg-10">
+
+            <article class="resume-wrapper mx-auto theme-bg-light p-5 mb-5 my-5 shadow-lg">
+
+                {{ partial "header.html" . }}
+
+                <div class="resume-body">
+
+                    <div class="row">
+
+                        <div class="resume-main col-11 col-lg-11 col-xl-11 pr-0 pr-lg-11">
+
+                            {{ if .Site.Params.publications.enable }}
+                            {{ partial "publications_year.html" . }}
+                            {{ end }}
+
+                        
+
+                        </div><!--//resume-main-->
+
+
+                    </div><!--//row-->
+
+                </div><!--//resume-body-->
+
+                <hr>
+
+                {{ if .Site.Params.social.enable }}
+                {{ partial "social.html" . }}
+                {{ end }}
+
+            </article>
+
+        </div><!--//container-->
+
+        {{ partial "footer.html" . }}
+
+    </div><!--//main-wrapper-->
+
+    {{ partial "scripts.html" . }}
+
+</body>
+
+</html>

@@ -12,8 +12,9 @@
 
     <div class="main-wrapper">
 
-        <div class="container px-3 px-lg-5">
+        <div class="container px-1 px-lg-10">
 
+        
             <article class="resume-wrapper mx-auto theme-bg-light p-5 mb-5 my-5 shadow-lg">
 
                 {{ partial "header.html" . }}
@@ -32,6 +33,7 @@
 
                         <div class="resume-main col-12 col-lg-8 col-xl-9 pr-0 pr-lg-5">
 
+                           
                             {{ if .Site.Params.publications.enable }}
                             {{ partial "publications.html" . }}
                             {{ end }}
