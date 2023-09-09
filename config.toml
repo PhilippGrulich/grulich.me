@@ -1,6 +1,6 @@
 # Page settings
 
-baseURL = "http://localhost:1313/"
+baseURL = "https://grulich.me"
 languageCode = "en"
 title = "Philipp M. Grulich"
 #theme = "hugo-devresume-theme"
