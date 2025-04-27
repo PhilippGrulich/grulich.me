@@ -16,7 +16,7 @@
                                         </div>
                                         <div class="item-meta col-1 col-md-1 col-lg-1 text-muted text-left text-md-right">
                                             <span class="badge resume-publication-item">
-                                                <a class="label label-default" href="{{ .Site.BaseURL }}/{{ .link }}"><i class="fa-regular fa-file-pdf"></i></a>
+                                                <a class="label label-default" href="{{ .link }}"><i class="fa-regular fa-file-pdf"></i></a>
                                             
                                             </span> 
                                            
@@ -26,7 +26,7 @@
                                     {{ if .abstract }}
                                     <div class="item-content row hide mb-3">
                                         <div class="item-meta col-12 col-md-12 col-lg-12 text-muted text-left text-md-left">
-                                            <span class="badge resume-sub-publication-item"><a class="label label-default" target="_blank" href="{{ .Site.BaseURL }}/{{ .link }}"><i class="fa-regular fa-file-pdf"></i> Paper</a></span> 
+                                            <span class="badge resume-sub-publication-item"><a class="label label-default" target="_blank" href="{{ .link }}"><i class="fa-regular fa-file-pdf"></i> Paper</a></span> 
                                             {{ if .code }}
                                             <span class="badge resume-sub-publication-item"><a class="label label-default" target="_blank" href={{ .code }}><i class="fa-brands fa-github"></i> Code</a></span>
                                             {{ end }}
