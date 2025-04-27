@@ -213,6 +213,70 @@ I developed my Master's thesis while participating to an Erasmus+ program.
 
         enable = true
         [[params.publications.years]]
+        year = "2025"
+        [[params.publications.years.list]]
+            title = "Query Processing on Heterogeneous Hardware"
+            authors = "Anastasiia Kozar, Janis von Bleichert, Sebastian Breß, Philipp M Grulich, Clemens Lutz, Tilmann Rabl, Viktor Rosenfeld, Jonas Traub, Steffen Zeuch, Volker Markl"
+            venue = "Scalable Data Management for Future Hardware "
+            selected = false
+            abstract = "In modern processor design, power efficiency has become the primary constraint, prompting manufacturers to develop processors that balance energy consumption with the growing demand for speed. This shift has initiated an era of heterogeneous multi-core computing, characterized by machines utilizing various processors such as GPUs, MICs, and FPGAs. These processors significantly enhance performance due to their computational capabilities and memory bandwidth, essential for optimizing query processing performance. However, executing database queries efficiently across diverse processors presents challenges due to architectural differences, leading to varied performance outcomes for different operator implementations. This chapter explores methodologies for executing database queries on any processor with maximum efficiency without manual adjustments. We propose compiling database queries into optimized code that can adapt continuously to achieve optimal performance across a wide array of processors. Key areas of focus include the use of GPUs in database systems, addressing challenges such as workload distribution and data transfer bottlenecks, and introducing a classification scheme for strategies developed to tackle these issues. Additionally, we examine NVLink 2.0 technology’s potential to improve data transfer efficiency between GPUs and CPUs, enhancing GPU-accelerated query processing. Furthermore, we present a novel adaptive query compilation-based stream processing engine (SPE) that surpasses traditional interpretation-based SPEs by incorporating runtime optimizations and task-based parallelization. This approach allows for dynamic adjustments to data characteristics, significantly improving query execution efficiency and throughput. Through these explorations, we aim to provide insights into current systems and highlight areas for future research, ultimately contributing to the advancement of heterogeneous query processing systems."
+            link = "https://link.springer.com/chapter/10.1007/978-3-031-74097-8_2"
+            slides = ""
+            video = ""
+            fullvenue = "Scalable Data Management for Future Hardware" 
+        [[params.publications.years]]
+            year = "2024"
+            [[params.publications.years.list]]
+                title = "Query compilation without regrets"
+                authors = "Philipp M. Grulich, Aljoscha Lepping, Dwi Prasetyo Adi Nugroho, Bonaventura Del Monte, Varun Pandey, Steffen Zeuch, Volker Markl"
+                venue = "Sigmod'24"
+                selected = true
+                abstract = "Engineering high-performance query execution engines is a challenging task. Query compilation provides excellent performance, but at the same time introduces significant system complexity, as it makes the engine hard to build, debug, and maintain. To overcome this complexity, we propose Nautilus, a framework that combines the ease of use of query interpretation and the performance of query compilation. On the one hand, Nautilus provides an interpretation-based operator interface that enables engineers to implement operators using imperative C++ code to ensure a familiar developer experience. On the other hand, Nautilus mitigates the performance drawbacks of interpretation by introducing a novel trace-based, multi-backend JIT compiler that translates operators into efficient code. As a result, Nautilus bridges the gap between compilation and interpretation and provides the best of both worlds, achieving high performance without sacrificing the productivity of engineers."
+                link = "https://dl.acm.org/doi/pdf/10.1145/3654968"
+                slides = "test"
+                video = ""
+                fullvenue = "Proceedings of the ACM on Management of Data, Volume 2, Issue 3" 
+         [[params.publications.years]]
+            year = "2024"
+            [[params.publications.years.list]]
+                title = "Bridging the Gap: Complex Event Processing on Stream Processing Systems"
+                authors = "Ariane Ziehn, Philipp M. Grulich, Steffen Zeuch, Volker Markl"
+                venue = "EDBT'24"
+                selected = false
+                abstract = "Joining streams is an essential and resource-demanding operation in stream processing engines (SPEs). Recent works have shown significant performance benefits by offloading stream-join processing to hardware accelerators, including GPUs. As a result, a wide variety of GPU-accelerated stream join algorithms (SJAs) have emerged. However, existing works evaluate the proposed GPU-accelerated SJAs only in isolation, on different hardware, and not using a common workload. As a result, it is difficult to compare different SJAs and select the best-suited SJA for a particular situation. In this paper, we shed light on the performance characteristics of GPU-accelerated SJAs. To this end, we explore the configuration parameter space of SJAs and investigate the impact of each parameter. We evaluate the performance of well-known SJAs under multiple configurations of the underlying join algorithm, the parallelization strategy, the algorithm progressiveness, and the GPU type. Our results show that each variant of SJA has its strengths and weaknesses and that ill-suited configurations of parameters lead to up to two orders of magnitude difference in throughput. Based on the results, we developed a guideline for selecting SJA variants for different circumstances."
+                link = "https://openproceedings.org/2024/conf/edbt/paper-114.pdf"
+                slides = "test"
+                video = ""
+                fullvenue = "Proceedings of the 27th International Conference on Extending Database Technology (EDBT), 25th March-28th March, 2024," 
+        [[params.publications.years]]
+            year = "2024"
+            [[params.publications.years.list]]
+                title = "Benchmarking Stream Join Algorithms on GPUs: A Framework and its Application to the State-of-the-art"
+                authors = "Dwi PA Nugroho, Philipp M. Grulich, Steffen Zeuch, Clemens Lutz, Stefano Bortoli, Volker Markl"
+                venue = "EDBT'24"
+                selected = false
+                abstract = "Analytical Stream Processing (ASP) and Complex Event Processing (CEP) extract knowledge from unbounded data streams. ASP solutions are optimized for scalable cloud environments to handle huge volumes of data in motion. In contrast, CEP solutions aredesigned for single-machine deployments, limiting their usage for large data volumes and distributed processing. A few hybrid solutions seek to address the lack of support for large-scale CEP by enabling its support in ASP systems and exploiting their data collection and distribution capabilities. However, these hybrid solutions assign the entire pattern workload to a single unary operator, which becomes the bottleneck of the entire execution pipeline. In addition, this composed operator prevents the application from utilizing the highly efficient stream processing optimization capabilities currently available in ASP systems. In this paper, we propose a novel operator mapping that overcomes the drawbacks of current hybrid solutions. In particular, we bridge the gap between CEP and ASP by mapping CEP to ASP operators, enabling the decomposition of the pattern workload into multiple operators. As a result, our mapping enables CEP workloads to piggyback on the scalability and efficiency of cloud-based ASP systems. Our results demonstrate that our proposed mapping outperforms the single-operator solution for semantically equivalent ASP queries by a factor of up to 150x and enables workloads that current CEP solutions do not sustain. As a result, our mapping truly unlocks the benefits of both paradigms in one system by enabling a broad range of CEP functionalities in general-purpose ASP systems."
+                link = "https://openproceedings.org/2024/conf/edbt/paper-57.pdf"
+                slides = "test"
+                video = ""
+                fullvenue = "Proceedings of the 27th International Conference on Extending Database Technology (EDBT), 25th March-28th March, 2024," 
+        
+        [[params.publications.years]]
+            year = "2024"
+            [[params.publications.years.list]]
+                title = "Query compilation without regrets"
+                authors = "Philipp M. Grulich, Aljoscha Lepping, Dwi Prasetyo Adi Nugroho, Bonaventura Del Monte, Varun Pandey, Steffen Zeuch, Volker Markl"
+                venue = "Sigmod'24"
+                selected = true
+                abstract = "Engineering high-performance query execution engines is a challenging task. Query compilation provides excellent performance, but at the same time introduces significant system complexity, as it makes the engine hard to build, debug, and maintain. To overcome this complexity, we propose Nautilus, a framework that combines the ease of use of query interpretation and the performance of query compilation. On the one hand, Nautilus provides an interpretation-based operator interface that enables engineers to implement operators using imperative C++ code to ensure a familiar developer experience. On the other hand, Nautilus mitigates the performance drawbacks of interpretation by introducing a novel trace-based, multi-backend JIT compiler that translates operators into efficient code. As a result, Nautilus bridges the gap between compilation and interpretation and provides the best of both worlds, achieving high performance without sacrificing the productivity of engineers."
+                link = "https://dl.acm.org/doi/pdf/10.1145/3654968"
+                slides = "test"
+                video = ""
+                fullvenue = "Proceedings of the ACM on Management of Data, Volume 2, Issue 3" 
+                   
+      
+            
+        [[params.publications.years]]
             year = "2023"
             [[params.publications.years.list]]
                 title = "Towards Unifying Query Interpretation and Compilation"
@@ -387,10 +451,13 @@ I developed my Master's thesis while participating to an Erasmus+ program.
 
     [params.experience]
         enable = true
-
+        [[params.experience.list]]
+        title = "Senior Software Engineer"
+        dates = "2023 - Present"
+        company = "ObserveInc"
         [[params.experience.list]]
         title = "Research Associate"
-        dates = "2019 - Present"
+        dates = "2019 - 2023"
         company = "Technische Universität Berlin"
 
         [[params.experience.list]]
