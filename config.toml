@@ -191,7 +191,7 @@ for scalable, reliable, and efficient stateful stream processing.
 I published research papers at different venues including ACM SIGMOD, VLDB, and CIDR.
 <!-- {: class="text-justify"} -->
 
-I successfully defended my Ph.D. thesis about "Hardware-conscious techniques for efficient and reliable stateful stream processing" on December 5, 2022. Members of evaluation committee were [Volker Markl](https://www.dima.tu-berlin.de/menue/mitarbeiter/volker_markl),
+I successfully defended my Ph.D. thesis about ["Hardware-conscious techniques for efficient and reliable stateful stream processing"](https://api-depositonce.tu-berlin.de/server/api/core/bitstreams/6fa245ef-db4e-4eb1-ad7b-4427234963b0/content) on December 5, 2022. Members of evaluation committee were [Volker Markl](https://www.dima.tu-berlin.de/menue/mitarbeiter/volker_markl),
 [Tilmann Rabl](https://hpi.de/rabl/team/prof-dr-tilmann-rabl.html), [Peter Pietzuch](https://www.imperial.ac.uk/people/prp), [Matei Zaharia](https://cs.stanford.edu/people/matei/), and [Stefan Schmid](https://schmiste.github.io/).
 
 Before joining TU Berlin and DFKI,
@@ -236,8 +236,6 @@ I developed my Master's thesis while participating to an Erasmus+ program.
                 slides = "test"
                 video = ""
                 fullvenue = "Proceedings of the ACM on Management of Data, Volume 2, Issue 3" 
-         [[params.publications.years]]
-            year = "2024"
             [[params.publications.years.list]]
                 title = "Bridging the Gap: Complex Event Processing on Stream Processing Systems"
                 authors = "Ariane Ziehn, Philipp M. Grulich, Steffen Zeuch, Volker Markl"
@@ -248,8 +246,6 @@ I developed my Master's thesis while participating to an Erasmus+ program.
                 slides = "test"
                 video = ""
                 fullvenue = "Proceedings of the 27th International Conference on Extending Database Technology (EDBT), 25th March-28th March, 2024," 
-        [[params.publications.years]]
-            year = "2024"
             [[params.publications.years.list]]
                 title = "Benchmarking Stream Join Algorithms on GPUs: A Framework and its Application to the State-of-the-art"
                 authors = "Dwi PA Nugroho, Philipp M. Grulich, Steffen Zeuch, Clemens Lutz, Stefano Bortoli, Volker Markl"
@@ -261,20 +257,6 @@ I developed my Master's thesis while participating to an Erasmus+ program.
                 video = ""
                 fullvenue = "Proceedings of the 27th International Conference on Extending Database Technology (EDBT), 25th March-28th March, 2024," 
         
-        [[params.publications.years]]
-            year = "2024"
-            [[params.publications.years.list]]
-                title = "Query compilation without regrets"
-                authors = "Philipp M. Grulich, Aljoscha Lepping, Dwi Prasetyo Adi Nugroho, Bonaventura Del Monte, Varun Pandey, Steffen Zeuch, Volker Markl"
-                venue = "Sigmod'24"
-                selected = true
-                abstract = "Engineering high-performance query execution engines is a challenging task. Query compilation provides excellent performance, but at the same time introduces significant system complexity, as it makes the engine hard to build, debug, and maintain. To overcome this complexity, we propose Nautilus, a framework that combines the ease of use of query interpretation and the performance of query compilation. On the one hand, Nautilus provides an interpretation-based operator interface that enables engineers to implement operators using imperative C++ code to ensure a familiar developer experience. On the other hand, Nautilus mitigates the performance drawbacks of interpretation by introducing a novel trace-based, multi-backend JIT compiler that translates operators into efficient code. As a result, Nautilus bridges the gap between compilation and interpretation and provides the best of both worlds, achieving high performance without sacrificing the productivity of engineers."
-                link = "https://dl.acm.org/doi/pdf/10.1145/3654968"
-                slides = "test"
-                video = ""
-                fullvenue = "Proceedings of the ACM on Management of Data, Volume 2, Issue 3" 
-                   
-      
             
         [[params.publications.years]]
             year = "2023"
