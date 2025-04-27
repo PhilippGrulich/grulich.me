@@ -52,7 +52,7 @@ title = "Philipp M. Grulich"
         [[params.contact.list]]
         icon = "fas fa-envelope-square"
         url = "mailto:#"
-        text = "grulich [at] tu-berlin [dot] de"
+        text = "grulich [at] outlook [dot] com"
         [[params.contact.list]]
         icon = "fas fa-globe"
         url = "https://grulich.me/"
